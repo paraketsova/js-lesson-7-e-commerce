@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function ProductItem({product}) {
   return (
-    <div className='col-md-4'>
+    <div className='col-md-4 shadow p-3'>
       
       <img 
         className='img-fluid'
