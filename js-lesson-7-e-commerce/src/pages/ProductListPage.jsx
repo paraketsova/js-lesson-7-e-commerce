@@ -12,15 +12,18 @@ export default function ProductListPage() {
   }, [] )
 
   return (
-    <div>
+    <div className='container'>
       <h2>Product List Page</h2>
       {!imageList && <p>Loading</p>}
+      <div className='row'>
       {imageList && Object.entries(imageList).map(imageItem => {
         const key = imageItem[0]
         const value = imageItem[1]
         console.log(value)
         return <ProductItem key={key} product={value}/>
       })}
+      </div>
+      
     </div>
   )
 }
