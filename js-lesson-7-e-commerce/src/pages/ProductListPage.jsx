@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import ProductItem from '../components/ProductItem';
 
 export default function ProductListPage() {
   const [imageList, setImageList] = useState(null);
@@ -18,7 +19,7 @@ export default function ProductListPage() {
         const key = imageItem[0]
         const value = imageItem[1]
         console.log(value)
-        return <p>Image Item</p>
+        return <ProductItem key={key} product={value}/>
       })}
     </div>
   )
